@@ -19,17 +19,12 @@ body {
 .container {
   position: relative;
   z-index: 1;
-  border-radius: 24px;
-  box-shadow: 0 12px 40px rgb(106, 27, 154);
-  padding: 48px 36px 36px 36px;
-  max-width: 420px;
   text-align: left;
   margin: 32px;
-  backdrop-filter: blur(1px);
 }
 
 h1 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 2.3rem;
   color: #A020F0;
   margin-bottom: 0.3em;
@@ -39,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #A020F0;
   margin: 0.5em 0;
   text-align: left;
@@ -47,21 +42,21 @@ h2 {
 }
 
 h3 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #A020F0;
   margin: 0.5em 0;
   animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
 }
 
 small {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #A020F0;
   margin: 0.5em 0;
   animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
 }
 
 li {
-  font-family: 'Monsterrat', Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #A020F0;
   margin: 0.5em 0;
   text-align: left;
@@ -92,7 +87,7 @@ p {
   gap: 0.5em;
   padding: 0.85em 2.2em;
   font-size: 1.1rem;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: #A020F0;
   background: #000000;
