@@ -126,6 +126,17 @@ p {
     font-size: 0.9rem;
     margin: 0.3em;
   }
+  
+  .social-links {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+    gap: 0.0em;
+  }
+}
 
 .solid-separator {
   border: none;
@@ -138,7 +149,7 @@ p {
 .social-grid {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   gap: 1px;
   margin-bottom: 1.5em;
 }
