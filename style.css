@@ -64,11 +64,12 @@ li {
 }
 
 footer {
-  font-family: "Quicksand", sans-serif;
-  color: A020F0;
-  margin: 0.5em 0;
-  text-align: right;
-  animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: bottom-right;
+  font-size: small;
+  margin-top: auto;
 }
 
 @keyframes fadeInDown {
