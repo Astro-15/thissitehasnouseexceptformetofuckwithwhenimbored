@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+body {
+  min-height: 100vh;
+  background: #000000;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-image: url('https://raw.githubusercontent.com/Astro-15/astro-15.github.io/main/assets/background/backgrounddd.png'); 
+  background-size: 500px auto; 
+  background-position: left bottom; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-color: #000000; 
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  background: #000000;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgb(106, 27, 154);
+  padding: 48px 36px 36px 36px;
+  width: fit-content;
+  text-align: center;
+  margin: 32px;
+  backdrop-filter: blur(1px);
+  border: 2px solid #A020F0;
+}
+
+h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2.3rem;
+  color: #A020F0;
+  margin-bottom: 0.3em;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px #6A1B9A;
+  animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+}
+
+h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #A020F0;
+  margin: 0.5em 0;
+  text-align: left;
+  animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+}
+
+h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #A020F0;
+  margin: 0.5em 0;
+  text-align: left;
+  animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+}
+
+h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #A020F0;
+  margin: 0.5em 0;
+  text-align: left;
+  animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+}
+
+small {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #A020F0;
+  margin: 0.5em 0;
+  animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+}
+
+li {
+  font-family: 'Monsterrat', Arial, sans-serif;
+  color: #A020F0;
+  margin: 0.4em 0;
+  text-align: left;
+  animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+p {
+  font-size: 1.25rem;
+  color: #A020F0;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.fancy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.85em 2.2em;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  color: #A020F0;
+  background: #000000;
+  border: 2px solid #A020F0;
+  border-radius: 32px;
+  box-shadow: 0 4px 16px #6A1B9A;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
+  margin-top: 1em;
+  text-decoration: none;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+.fancy-btn i {
+  font-size: 1.3em;
+}
+.fancy-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 32px #6A1B9A;
+  background: #A020F0;
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 28px 8px 24px 8px;
+    max-width: 98vw;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .fancy-btn {
+    padding: 0.7em 1.5em;
+    font-size: 0.9rem;
+    margin: 0.3em;
+  }
+  
+  .social-links {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+    gap: 0.0em;
+  }
+}
+
+.solid-separator {
+  border: none;
+  height: 3px;
+  background-color: #A020F0;
+  margin: 20px auto;
+  width: 100%;
+ }
+
+.social-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  margin-bottom: 1.5em;
+}
+
+.social-grid a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 2px 0;
+}
+
+.bottom-right-fixed {
+  position: -webkit-fixed !important;
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  width: 180px !important;  
+  height: auto !important;  
+  z-index: 1000 !important;
+  pointer-events: none !important; 
+}
+
+@media (max-width: 600px) {
+  .bottom-right-fixed {
+    width: 75px !important; 
+    bottom: 5px !important;
+    right: 5px !important;
+    bottom: calc(5px + env(safe-area-inset-bottom)) !important;
+    right: calc(5px + env(safe-area-inset-right)) !important;
+  }
+}
