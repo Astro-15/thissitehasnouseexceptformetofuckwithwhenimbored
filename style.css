@@ -2,7 +2,6 @@
 
 body {
   min-height: 100vh;
-  background: #000000;
   margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
   display: flex;
@@ -133,17 +132,6 @@ p {
     font-size: 0.9rem;
     margin: 0.3em;
   }
-  
-  .social-links {
-    position: static;
-    transform: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: left;
-    gap: 0.0em;
-  }
-}
 
 .solid-separator {
   border: none;
