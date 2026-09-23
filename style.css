@@ -189,3 +189,28 @@ p {
     right: calc(5px + env(safe-area-inset-right)) !important;
   }
 }
+
+.code-container {
+  position: relative;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: monospace;
+}
+
+#copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+#copy-btn:hover {
+  background-color: #e1e4e8;
+}
